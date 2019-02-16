@@ -1,0 +1,12 @@
+<center><h1>당신이 입력한 텍스트는 {{total}} 로 이루어져 있습니다. </h1></center>
+
+<right><a href = "{%url 'home' %}"> RETRY </a></right><hr>
+<center>
+<h2> 입력한 텍스트 </h2>
+{{full}}
+<hr>
+<h2>단어 카운트 </h2>
+{%for word, howmany in dictionary%}
+{{word}} : {{howmany}} <br>
+{%endfor%}
+</center>
